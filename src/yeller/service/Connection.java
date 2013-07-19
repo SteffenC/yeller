@@ -14,7 +14,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
 import yeller.Main;
-import static yeller.Main.writer;
 import yeller.gui.ChatFrame;
 import yeller.model.Message;
 import yeller.model.Server;
@@ -92,6 +91,7 @@ public class Connection {
                     break;
 
                 case "JOIN":
+                    Service.getOnlineUsers();
                     System.out.println("################# A join was received");
                     break;
 

@@ -1,15 +1,11 @@
 package yeller;
 
-import yeller.service.Service;
-import yeller.model.Message;
 import yeller.gui.ChatFrame;
 import yeller.gui.SettingFrame;
 import java.io.*;
-import java.net.*;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.text.BadLocationException;
-import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 import yeller.model.Channel;

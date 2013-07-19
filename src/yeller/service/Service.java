@@ -8,6 +8,7 @@ import static yeller.Main.listModel;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.DefaultListModel;
 import javax.swing.text.BadLocationException;
 
 /**
@@ -34,12 +35,14 @@ public class Service {
     }
 
     public static void getOnlineUsers() throws IOException {
+//        Main.mf.listPeople
         Connection.writer.write("NAMES #datamatiker" + "\r\n");
         Connection.writer.flush();
     }
 
     public static void fetchUsernames(String line) {
-
+        listModel.removeAllElements();
+        Main.mf.listPeople.getModel();
         arr = line.split(" ");
         String temp = "";
 
