@@ -8,6 +8,7 @@ import static yeller.Main.listModel;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.DefaultListModel;
 import javax.swing.text.BadLocationException;
 
 /**
@@ -44,7 +45,7 @@ public class Service {
 
         arr = line.split(" ");
         String temp = "";
-
+        listModel = new DefaultListModel();
         for (int i = 5; i < arr.length; i++) {
             temp = arr[i].toString();
             List<String> list = Arrays.asList(arr);

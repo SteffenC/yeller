@@ -149,6 +149,8 @@ public class Main {
                     break;
                     
                 case "JOIN":
+                    Service.fetchUsernames(line);
+                    Service.getOnlineUsers();
                     System.out.println("################# A join was received");
                     break;
                     
